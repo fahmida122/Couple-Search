@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e6f9ef4420.js" crossorigin="anonymous"></script>
+    <title>Couple Searching</title>
+    <link rel="stylesheet" href="cpl-search.css">
+</head>
+<body>
+    <!-- ------Header Section------ -->
+    <section class="head">
+
+        <!-- -------Navbar------- -->
+        <nav id="navbar" class="sticky">
+            <a href="index.html" class="nav-logo">muslimHack</a>
+            <div class="nav-links" id="navLinks">
+                <ul id="menu">
+                    <li><a href="form.html"><h1>Publish Biodata</h1></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- --------Couple Searching div,it is made to search one's suitable match------- -->
+            <form method="POST" action="show.php" class="contain">
+                <h1>Search for the perfect Match!</h1>
+                <div class="class1">
+                    <label for="searchM/F">Searching For&nbsp</label>
+                    <select name="gender" id="searchM/F">
+                        <option value="all" selected>All Biodata</option>
+                        <option value="male" >Male's Biodata</option>
+                        <option value="female" >Female's Biodata</option>
+                    </select>
+                </div>
+                <div class="class1">
+                    <label for="searchM/F">Marital Status&nbsp</label>
+                    <select name="marital_status" id="searchM/F" ">
+                        <option value="all" selected>All</option>
+                        <option value="unmarried" >Unmarried</option>
+                        <option value="married" >Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widow" >Widow</option>
+                        <option value="widower" >Widower</option>
+                    </select>
+                </div>
+                <div class="class1">
+                    <label for="searchM/F">District&nbsp;</label>
+                    <select name="permanent_address" id="searchM/F">
+                        <option value="all" selected>All</option>
+                        <option value="bagerhat" >Bagerhat</option>
+                        <option value="Bandarban" >Bandarban</option>
+                        <option value="Barguna" >Barguna </option>
+                        <option value="Barisal" >Barisal</option>
+                        <option value="Bhola" >Bhola</option>
+                        <option value="Bogra" >Bogra</option>
+                        <option value="Brahmanbaria" >Brahmanbaria</option>
+                        <option value="Chandpur" >Chandpur</option>
+                        <option value="Chapainawabganj" >Chapainawabganj </option>
+                        <option value="Chittagong" >Chittagong</option>
+                        <option value="Chuadanga" >Chuadanga </option>
+                        <option value="Comilla" >Comilla</option>
+                        <option value="Cox's Bazar" >Cox's Bazar </option>
+                        <option value="Dhaka" >Dhaka</option>
+                        <option value="Dinajpur" >Dinajpur</option>
+                        <option value="Faridpur" >Faridpur</option>
+                        <option value="Feni" >Feni</option>
+                        <option value="Gaibandha" >Gaibandha</option>
+                        <option value="Gazipur" >Gazipur</option>
+                        <option value="Gopalganj" >Gopalganj</option>
+                        <option value="Habiganj" >Habiganj</option>
+                        <option value="Jamalpur" >Jamalpur</option>
+                        <option value="Jessore" >Jessore</option>
+                        <option value="Jhalokati" >Jhalokati</option>
+                        <option value="Jhenaidah" >Jhenaidah</option>
+                        <option value="Joypurhat" >Joypurhat</option>
+                        <option value="Khagrachhari" >Khagrachhari</option>
+                        <option value="Khulna" >Khulna</option>
+                        <option value="Kishoreganj" >Kishoreganj </option>
+                        <option value="Kurigram" >Kurigram</option>
+                        <option value="Kushtia" >Kushtia</option>
+                        <option value="Lakshmipur" >Lakshmipur </option>
+                        <option value="Lalmonirhat" >Lalmonirhat</option>
+                        <option value="Madaripur" >Madaripur</option>
+                        <option value="Magura" >Magura</option>
+                        <option value="Manikganj" >Manikganj </option>
+                        <option value="Meherpur" >Meherpur</option>
+                        <option value="Moulvibazar" >Moulvibazar</option>
+                        <option value="Munshiganj" >Munshiganj </option>
+                        <option value="Mymensingh" >Mymensingh</option>
+                        <option value="Naogaon" >Naogaon</option>
+                        <option value="Narail" >Narail</option>
+                        <option value="Narayanganj" >Narayanganj</option>
+                        <option value="Narsingdi" >Narsingdi</option>
+                        <option value="Natore" >Natore</option>
+                        <option value="Netrokona" >Netrokona</option>
+                        <option value="Nilphamari" >Nilphamari</option>
+                        <option value="Noakhali" >Noakhali</option>
+                        <option value="Pabna" >Pabna</option>
+                        <option value="Panchagarh" >Panchagarh</option>
+                        <option value="Patuakhali" >Patuakhali</option>
+                        <option value="Pirojpur" >Pirojpur</option>
+                        <option value="Rajbari" >Rajbari</option>
+                        <option value="Rajshahi" >Rajshahi</option>
+                        <option value="Rangamati" >Rangamati</option>
+                        <option value="Rangpur" >Rangpur</option>
+                        <option value="Satkhira" >Satkhira</option>
+                        <option value="Shariatpur" >Shariatpur</option>
+                        <option value="Sherpur" >Sherpur</option>
+                        <option value="Sirajganj" >Sirajganj</option>
+                        <option value="Sunamganj" >Sunamganj</option>
+                        <option value="Sylhet" >Sylhet</option>
+                        <option value="Tangail" >Tangail</option>
+                        <option value="Thakurgaon" >Thakurgaon</option>
+                    </select>
+                </div>
+                <div>
+                    
+                    <button type ="submit" class="btn1"><i class="fa fa-search"></i>&nbsp&nbspSearch</button>
+                </div>
+            </form>
+			
+    </section>
+
+    <!-- ------In this section,we added a video to let the users know that how they can make and upload their bio-data------ -->
+    <section class="add_bio">
+        <h1>How To Add Biodata</h1>
+        <iframe width="820" height="380"
+src="https://www.youtube.com/embed/71hi9H6fZuc">
+</iframe>
+    </section>
+</body>
+</html>
