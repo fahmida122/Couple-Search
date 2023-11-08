@@ -107,9 +107,4 @@ Acknowledgement:
 
 
 
-Member 2: Fahmida Akter
-Reg No: 2018331122
-Session: 2018-19
-Email: fahmidaakter339@gmail.com
 
-<small>&copy; 2021 - Dept. of CSE, SUST, BD</small>
