@@ -101,7 +101,7 @@ Contribution(2018331122):
 Acknowledgement:
 ----------------
 1.@Kawchar Ahmed: Special thanks to this man who helped us a lot despite of his very busy schedule.We faced some problems raleted to database connections, and he instructed us that how can we solve that problem and also showed us the error in our code where we got stucked.<br/>
-2.@Saju Vai: He have helped us by giving some resources.
+2.@Saju Vai: Thanks for helping us by giving resources.
 
 
 
