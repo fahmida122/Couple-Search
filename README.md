@@ -1,23 +1,24 @@
 # G53-Couple-Search
-Expected Timeline
 
+**Group Number:** 53
+
+Team Members:
+--------------
+1)Fahmida Akter (2018331122)<br/>
+2)Ahad Mahjabin Jannat (2018331090)
+
+Expected Timeline:
+------------------
 ![Gantt_chart](https://user-images.githubusercontent.com/52985563/117701379-0271b700-b17c-11eb-98e0-f1b294c7bf1b.jpg)
 
-Feature Descriptions 
-
-Visiting this site anyone(practicing Muslim)
-can see the bio-data of others.A demo video 
-will be attached so that people can understand 
-how to create or update bio-data easily.Most
-important thing is that only practicing Muslims
-will get the access of using this app after 
-filling up some special conditions.Apart these,
-ayat from Quran and Hadith related to marriage 
-will be added in this app.  
+Feature Description:
+--------------------
+Anyone visiting this site can see the biodata of others. A demo video will be attached so that people can understand how to create or update biodata easily. 
 
 
+Report on Learning Pre-requisites:
+----------------------------------
 
-Report on Learning Pre-requisites
 |   SL   |    Learning Task    |   Description   |   Status   |    Comment    |
 |:------:|:-------------------:|:---------------:|:----------:|:-------------:|
 |1| Web Basics(Front End)|HTML,CSS,JavaScript,JQuery,Bootstrap | ![](https://img.shields.io/badge/HTML-Learned%20-green)![](https://img.shields.io/badge/CSS-Learned%20-green)![](https://img.shields.io/badge/JavaScript%20-Learning%20-red)![](https://img.shields.io/badge/JQuery%20-Critical%20-red)![](https://img.shields.io/badge/Bootstrap%20-Critical%20-red)|Green color means "Learned",Red color means "Have to learn",Blue color means "Will try to learn" |
@@ -27,6 +28,7 @@ Report on Learning Pre-requisites
 
 
 Underlying Technologies:
+------------------------
 1.OS(Windows)
 2.Browser
 3.HTML & CSS
@@ -34,20 +36,23 @@ Underlying Technologies:
 5.Programming Language - JavaScript,PHP
 
 Implemented Features:
-1Login
+---------------------
+1.Login
 2.SignUp
 3.Biodata Adding
 4.Biodata Searching
 5.Posting Any Post
 6.Database Connection
 
-#Unimplemented Features:
+Unimplemented Features:
+-----------------------
 1.Adding Courses and Payment System to them
 2.Chatting Option
 3.Admin Panel
 4.Profile adding
 
-#Functionalities
+Functionalities:
+----------------
 1.Sticky Navbar
 2.3D Login & SignUp Form
 3.Website Exploring Button
@@ -61,7 +66,9 @@ Implemented Features:
 11.Biodata Adding Tutorial
 12.Toggle Menu For Biodata-Form Uploading
 
-#Contribution(2018331090)
+
+Contribution(2018331090):
+-------------------------
 1.Sticky Navbar 
 2.3D Flip Login & SignUp Form
 3.Beautiful ‘Home Section’
@@ -78,7 +85,9 @@ Implemented Features:
 14.Giving detailed Ideas & Overviews About The Project Look & Functionalities
 15.Other contribution(.ppt file,readme.md,.instruction.md,description.md file,documentation,website related some other work etc.)
 
-#Contribution(2018331122)
+
+Contribution(2018331122):
+-------------------------
 1.Database Connection With Login & SignUp Form
 2.Posting System
 3.Database Connection with Biodata Searching Option
@@ -88,21 +97,15 @@ Implemented Features:
 7.Gantt Chart
 
 
-#Acknowledgement
+
+Acknowledgement:
+----------------
 1.@Kawchar Ahmed: Special thanks to this man who helped us a lot despite of his very busy schedule.We faced some problems raleted to database connections, and he instructed us that how can we solve that problem and also showed us the error in our code where we got stucked.
 2.@Saju Vai: He have helped us by giving some resources.
-3.@Youtube channels and websites: Code with harry,kevin powel,easy tutorials,anisul islam,w3 school and some other unknown youtube channel and websites which helped us to learn the things i.e. html,css,javascript,php,mysql,bootstrap etc and also learned so many tricks and ideas .
 
-#Developers
 
-Group No:#53
-Group Name:Team Ailsha
 
-Member 1: Ahad Mahjabin Jannat
-REg No:2018331090
-Session:2018-19
-Email:mahjabinjannat153gmail.com
-Phone No:01718604096
+
 
 Member 2: Fahmida Akter
 Reg No: 2018331122
