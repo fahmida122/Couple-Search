@@ -67,44 +67,5 @@ Functionalities:
 12.Toggle Menu For Biodata-Form Uploading<br/>
 
 
-Contribution(2018331090):
--------------------------
-1.Sticky Navbar <br/>
-2.3D Flip Login & SignUp Form<br/>
-3.Beautiful ‘Home Section’<br/>
-4.Beautiful ‘Service Section’<br/>
-5.‘Asking Question’ Form Making<br/>
-6.Beautiful ‘About Us’ Section<br/>
-7.Testimonial Cart<br/>
-8.Contacting Us form and section<br/>
-9.Beautiful Animated Footer<br/>
-10.Sticky Chatting Option<br/>
-11.Biodata Searching & Adding Page<br/>
-12.Beautiful Toggle Menu For Biodata-form<br/>
-13.Beautiful Bio-data Adding Form<br/>
-14.Giving detailed Ideas & Overviews About The Project Look & Functionalities<br/>
-15.Other contribution(.ppt file,readme.md,.instruction.md,description.md file,documentation,website related some other work etc.)
-
-
-Contribution(2018331122):
--------------------------
-1.Database Connection With Login & SignUp Form<br/>
-2.Posting System<br/>
-3.Database Connection with Biodata Searching Option<br/>
-4.Database Connection Biodata Uploading Form<br/>
-5.Database Connection with ‘Donation’ & ‘Asking Help Form’ <br/>
-6.Idea Sharing<br/>
-7.Gantt Chart
-
-
-
-Acknowledgement:
-----------------
-1.@Kawchar Ahmed: Special thanks to this man who helped us a lot despite of his very busy schedule.We faced some problems raleted to database connections, and he instructed us that how can we solve that problem and also showed us the error in our code where we got stucked.<br/>
-2.@Saju Vai: Thanks for helping us by giving resources.
-
-
-
-
 
 
