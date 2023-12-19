@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body >
+    <section class="hero">
+      <!-- -------Navbar------- -->
+      
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="general()">General Info</button>
+			<button type="button" class="toggle-btn" onclick="education()">Educational Info</button>
+            <button type="button" class="toggle-btn" onclick="personal()">Personal Info</button>
+            <button type="button" class="toggle-btn" onclick="family()">Family Info</button>
+            <button type="button" class="toggle-btn" onclick="partner()">Partner Preference</button>
+            <button type="button" class="toggle-btn" onclick="contact()">Contact Info</button>
+        </div>
+        <form  method="POST" action="form_1.php " id="general" class="input-group">
+ <input type="text" class="input-field" name="name" placeholder="Enter Your Name" required>
+ <input type="email" class="input-field" name="email" placeholder="Enter Your Email" required>
+ <div class="flex-radio">
+   <p> <b>Your Gender</b></p>
+<input type="radio" class="radio-btn"  name="gender" value="male"  checked="checked" > Male
+<input type="radio"  class="radio-btn" name="gender" value="female" > Female
+</div>
+
+	<div  class="input-field dropDown">
+            <label for="searchM/F" class="">Marital Status&nbsp</label>
+            <select name="marital_status" id="searchM/F" ">
+                <option value="unmarried" >Unmarried</option>
+                <option value="married" >Married</option>
+                <option value="divorced" selected>Divorced</option>
+                <option value="widow" >Widow</option>
+                <option value="widower" >Widower</option>
+            </select>
+        </div>
+	
+	<div class="input-field dropDown">
+            <label for="searchM/F" id="m" class="">Your Present Address &nbsp</label>
+            <select name="present_address" id="searchM/F">
+                <option value="bagerhat" >Bagerhat</option>
+                <option value="Bandarban" >Bandarban</option>
+                <option value="Barguna" >Barguna </option>
+                <option value="Barisal" >Barisal</option>
+                <option value="Bhola" >Bhola</option>
+                <option value="Bogra" >Bogra</option>
+                <option value="Brahmanbaria" >Brahmanbaria</option>
+                <option value="Chandpur" >Chandpur</option>
+                <option value="Chapainawabganj" >Chapainawabganj </option>
+                <option value="Chittagong" >Chittagong</option>
+                <option value="Chuadanga" >Chuadanga </option>
+                <option value="Comilla" >Comilla</option>
+                <option value="Cox's Bazar" >Cox's Bazar </option>
+                <option value="Dhaka" >Dhaka</option>
+                <option value="Dinajpur" >Dinajpur</option>
+                <option value="Faridpur" >Faridpur</option>
+                <option value="Feni" >Feni</option>
+                <option value="Gaibandha" >Gaibandha</option>
+                <option value="Gazipur" >Gazipur</option>
+                <option value="Gopalganj" >Gopalganj</option>
+                <option value="Habiganj" >Habiganj</option>
+                <option value="Jamalpur" >Jamalpur</option>
+                <option value="Jessore" >Jessore</option>
+                <option value="Jhalokati" >Jhalokati</option>
+                <option value="Jhenaidah" >Jhenaidah</option>
+                <option value="Joypurhat" >Joypurhat</option>
+                <option value="Khagrachhari" >Khagrachhari</option>
+                <option value="Khulna" >Khulna</option>
+                <option value="Kishoreganj" >Kishoreganj </option>
+                <option value="Kurigram" >Kurigram</option>
+                <option value="Kushtia" >Kushtia</option>
+                <option value="Lakshmipur" >Lakshmipur </option>
+                <option value="Lalmonirhat" >Lalmonirhat</option>
+                <option value="Madaripur" >Madaripur</option>
+                <option value="Magura" >Magura</option>
+                <option value="Manikganj" >Manikganj </option>
+                <option value="Meherpur" >Meherpur</option>
+                <option value="Moulvibazar" >Moulvibazar</option>
+                <option value="Munshiganj" >Munshiganj </option>
+                <option value="Mymensingh" >Mymensingh</option>
+                <option value="Naogaon" >Naogaon</option>
+                <option value="Narail" >Narail</option>
+                <option value="Narayanganj" >Narayanganj</option>
+                <option value="Narsingdi" >Narsingdi</option>
+                <option value="Natore" >Natore</option>
+                <option value="Netrokona" >Netrokona</option>
+                <option value="Nilphamari" >Nilphamari</option>
+                <option value="Noakhali" >Noakhali</option>
+                <option value="Pabna" >Pabna</option>
+                <option value="Panchagarh" >Panchagarh</option>
+                <option value="Patuakhali" >Patuakhali</option>
+                <option value="Pirojpur" >Pirojpur</option>
+                <option value="Rajbari" >Rajbari</option>
+                <option value="Rajshahi" >Rajshahi</option>
+                <option value="Rangamati" >Rangamati</option>
+                <option value="Rangpur" >Rangpur</option>
+                <option value="Satkhira" >Satkhira</option>
+                <option value="Shariatpur" >Shariatpur</option>
+                <option value="Sherpur" >Sherpur</option>
+                <option value="Sirajganj" >Sirajganj</option>
+                <option value="Sunamganj" >Sunamganj</option>
+                <option value="Sylhet" >Sylhet</option>
+                <option value="Tangail" >Tangail</option>
+                <option value="Thakurgaon" >Thakurgaon</option>
+            </select>
+        </div>
+	
+	
+	<div class="input-field dropDown">
+            <label for="searchM/F" id="m" class="">Your Permanent Address &nbsp</label>
+            <select name="permanent_address" id="searchM/F">
+                <option value="bagerhat" >Bagerhat</option>
+                <option value="Bandarban" >Bandarban</option>
+                <option value="Barguna" >Barguna </option>
+                <option value="Barisal" >Barisal</option>
+                <option value="Bhola" >Bhola</option>
+                <option value="Bogra" >Bogra</option>
+                <option value="Brahmanbaria" >Brahmanbaria</option>
+                <option value="Chandpur" >Chandpur</option>
+                <option value="Chapainawabganj" >Chapainawabganj </option>
+                <option value="Chittagong" >Chittagong</option>
+                <option value="Chuadanga" >Chuadanga </option>
+                <option value="Comilla" >Comilla</option>
+                <option value="Cox's Bazar" >Cox's Bazar </option>
+                <option value="Dhaka" >Dhaka</option>
+                <option value="Dinajpur" >Dinajpur</option>
+                <option value="Faridpur" >Faridpur</option>
+                <option value="Feni" >Feni</option>
+                <option value="Gaibandha" >Gaibandha</option>
+                <option value="Gazipur" >Gazipur</option>
+                <option value="Gopalganj" >Gopalganj</option>
+                <option value="Habiganj" >Habiganj</option>
+                <option value="Jamalpur" >Jamalpur</option>
+                <option value="Jessore" >Jessore</option>
+                <option value="Jhalokati" >Jhalokati</option>
+                <option value="Jhenaidah" >Jhenaidah</option>
+                <option value="Joypurhat" >Joypurhat</option>
+                <option value="Khagrachhari" >Khagrachhari</option>
+                <option value="Khulna" >Khulna</option>
+                <option value="Kishoreganj" >Kishoreganj </option>
+                <option value="Kurigram" >Kurigram</option>
+                <option value="Kushtia" >Kushtia</option>
+                <option value="Lakshmipur" >Lakshmipur </option>
+                <option value="Lalmonirhat" >Lalmonirhat</option>
+                <option value="Madaripur" >Madaripur</option>
+                <option value="Magura" >Magura</option>
+                <option value="Manikganj" >Manikganj </option>
+                <option value="Meherpur" >Meherpur</option>
+                <option value="Moulvibazar" >Moulvibazar</option>
+                <option value="Munshiganj" >Munshiganj </option>
+                <option value="Mymensingh" >Mymensingh</option>
+                <option value="Naogaon" >Naogaon</option>
+                <option value="Narail" >Narail</option>
+                <option value="Narayanganj" >Narayanganj</option>
+                <option value="Narsingdi" >Narsingdi</option>
+                <option value="Natore" >Natore</option>
+                <option value="Netrokona" >Netrokona</option>
+                <option value="Nilphamari" >Nilphamari</option>
+                <option value="Noakhali" >Noakhali</option>
+                <option value="Pabna" >Pabna</option>
+                <option value="Panchagarh" >Panchagarh</option>
+                <option value="Patuakhali" >Patuakhali</option>
+                <option value="Pirojpur" >Pirojpur</option>
+                <option value="Rajbari" >Rajbari</option>
+                <option value="Rajshahi" >Rajshahi</option>
+                <option value="Rangamati" >Rangamati</option>
+                <option value="Rangpur" >Rangpur</option>
+                <option value="Satkhira" >Satkhira</option>
+                <option value="Shariatpur" >Shariatpur</option>
+                <option value="Sherpur" >Sherpur</option>
+                <option value="Sirajganj" >Sirajganj</option>
+                <option value="Sunamganj" >Sunamganj</option>
+                <option value="Sylhet" >Sylhet</option>
+                <option value="Tangail" >Tangail</option>
+                <option value="Thakurgaon" >Thakurgaon</option>
+            </select>
+        </div>
+
+		<div class="input-field dropDown">
+            <label for="searchM/F" id="m" class="">Your Blood Group&nbsp</label>
+            <select name="blood_group" id="searchM/F">
+                <option value="A Positive">A+</option>
+    <option value="A Negative">A-</option>
+    
+    <option value="B Positive">B+</option>
+    <option value="B Negative">B-</option>
+ 
+    <option value="AB Positive">AB+</option>
+    <option value="AB Negative">AB-</option>
+    
+    <option value="O Positive">O+</option>
+    <option value="O Negative">O-</option>
+    
+    <option value="Unknown">Unknown</option>
+                
+            </select>
+	
+</div>
+	
+	          <input type="text" class="input-field" placeholder="Enter Your Birthday" name="birth_date" required>
+
+          <input type="text" class="input-field" placeholder="Enter Your Height"  name="height" required>
+
+	          <input type="text" class="input-field" placeholder="Enter Your Weight" name="weight" required>
+	
+				
+	
+		<input type="text" class="input-field" placeholder="Your Occupation" name="occupation"  >
+		<input type="text" class="input-field" placeholder="Your Monthly Income" name="your_monthly_income"  >
+		
+		
+
+<button type="submit" class="submit-btn">Save</button>
+
+</form>
+
+
+
+         <!--   <input type="text" class="input-field" placeholder="Enter Your Name" required>
+<p> <b>Your Gender</b></p>
+<input type="radio" name="gender" value="male" class="input-field" checked="checked" > Male
+<input type="radio" name="gender" value="female" class="input-field"> Female
+          <input type="text" class="input-field" placeholder="Enter Your Birthday" required>
+            <input type="text" class="input-field" placeholder="Enter Your Complexion" required>
+            <input type="text" class="input-field" placeholder="Enter Your Height" required>
+            <input type="text" class="input-field" placeholder="Enter Your Weight" required>
+	<div class="class1">
+            <label for="searchM/F" id="m">Your Blood Group&nbsp</label>
+            <select name="blood_group" id="searchM/F">
+                <option value="A Positive">A Positive</option>
+    <option value="A Negative">A Negative</option>
+    
+    <option value="B Positive">B Positive</option>
+    <option value="B Negative">B Negative</option>
+ 
+    <option value="AB Positive">AB Positive</option>
+    <option value="AB Negative">AB Negative</option>
+    
+    <option value="O Positive">O Positive</option>
+    <option value="O Negative">O Negative</option>
+    
+    <option value="Unknown">Unknown</option>
+                
+            </select>
+        </div>
+		<input type="text" class="input-field" placeholder="Do You Have Any Physical/Mental defeciencies " required>
+            <input type="text" class="input-field" placeholder="Do You Pray Five Times? " required>
+            <input type="text" class="input-field" placeholder="Do You Have Any Physical/Mental " required> -->
+        
+		
+		
+<form method="POST" action="form_2.php " id="education" class="input-group">
+    <div class="flex-radio">
+<p><b> Have you completed SSC?</b></p>
+<input type="radio" name="ssc" value="Yes" checked="checked" > Yes
+<input type="radio" name="ssc" value="No"> No
+<input type="radio" name="ssc" value="Running" > Running
+</div>
+
+<input type="text" class="input-field" placeholder="Institution's Name" name="institution_name_ssc"  >
+
+<input type="text" class="input-field" placeholder="Passing Year" name="passing_year_ssc"  >
+
+<input type="text" class="input-field" placeholder="Obtained GPA" name="obtained_gpa_ssc"  >
+
+<div class="flex-radio">
+<p><b> Have you completed HSC?</b></p>
+
+<input type="radio" name="hsc" value="Yes" checked="checked"  > Yes
+<input type="radio" name="hsc" value="No" > No
+<input type="radio" name="hsc" value="Running" > Running
+</div>
+
+<input type="text" class="input-field" placeholder="Institution's Name" name="institution_name_hsc"  >
+
+<input type="text" class="input-field" placeholder="Passing Year" name="passing_year_hsc"  >
+
+<input type="text" class="input-field" placeholder="Obtained GPA" name="obtained_gpa_hsc">  
+
+<div class="flex-radio">
+<p><b> Have you completed Honours?</b></p>
+
+<input type="radio" name="bsc" value="Yes" checked="checked" > Yes
+<input type="radio" name="bsc" value="No" > No
+<input type="radio" name="bsc" value="Running" > Running
+</div>
+
+<input type="text" class="input-field" placeholder="Institution's Name" name="institution_name_bsc"  >
+
+<input type="text" class="input-field" placeholder="Your Department" name="department"  >
+
+<input type="text" class="input-field" placeholder="Passing Year" name="passing_year_bsc"  >
+
+<input type="text" class="input-field" placeholder="Obtained CGPA" name="obtained_cgpa_bsc"  >
+
+<input type="text" class="input-field" placeholder="Other Educational Qualifications" name="others"  >
+
+
+ <div class="flex-radio">
+
+<p> <b>Your Gender</b></p>
+<input type="radio" class="radio-btn"  name="gender" value="male"  checked="checked" > Male
+<input type="radio"  class="radio-btn" name="gender" value="female" > Female
+</div>
+
+	<div  class="input-field dropDown">
+            <label for="searchM/F" class="">Marital Status&nbsp</label>
+            <select name="marital_status" id="searchM/F" ">
+                <option value="unmarried" >Unmarried</option>
+                <option value="married" >Married</option>
+                <option value="divorced" selected>Divorced</option>
+                <option value="widow" >Widow</option>
+                <option value="widower" >Widower</option>
+            </select>
+        </div>
+	
+
+
+ <div class="input-field dropDown">
+            <label for="searchM/F" id="m" class="">Your Permanent Address &nbsp</label>
+            <select name="permanent_address" id="searchM/F">
+                <option value="bagerhat" >Bagerhat</option>
+                <option value="Bandarban" >Bandarban</option>
+                <option value="Barguna" >Barguna </option>
+                <option value="Barisal" >Barisal</option>
+                <option value="Bhola" >Bhola</option>
+                <option value="Bogra" >Bogra</option>
+                <option value="Brahmanbaria" >Brahmanbaria</option>
+                <option value="Chandpur" >Chandpur</option>
+                <option value="Chapainawabganj" >Chapainawabganj </option>
+                <option value="Chittagong" >Chittagong</option>
+                <option value="Chuadanga" >Chuadanga </option>
+                <option value="Comilla" >Comilla</option>
+                <option value="Cox's Bazar" >Cox's Bazar </option>
+                <option value="Dhaka" >Dhaka</option>
+                <option value="Dinajpur" >Dinajpur</option>
+                <option value="Faridpur" >Faridpur</option>
+                <option value="Feni" >Feni</option>
+                <option value="Gaibandha" >Gaibandha</option>
+                <option value="Gazipur" >Gazipur</option>
+                <option value="Gopalganj" >Gopalganj</option>
+                <option value="Habiganj" >Habiganj</option>
+                <option value="Jamalpur" >Jamalpur</option>
+                <option value="Jessore" >Jessore</option>
+                <option value="Jhalokati" >Jhalokati</option>
+                <option value="Jhenaidah" >Jhenaidah</option>
+                <option value="Joypurhat" >Joypurhat</option>
+                <option value="Khagrachhari" >Khagrachhari</option>
+                <option value="Khulna" >Khulna</option>
+                <option value="Kishoreganj" >Kishoreganj </option>
+                <option value="Kurigram" >Kurigram</option>
+                <option value="Kushtia" >Kushtia</option>
+                <option value="Lakshmipur" >Lakshmipur </option>
+                <option value="Lalmonirhat" >Lalmonirhat</option>
+                <option value="Madaripur" >Madaripur</option>
+                <option value="Magura" >Magura</option>
+                <option value="Manikganj" >Manikganj </option>
+                <option value="Meherpur" >Meherpur</option>
+                <option value="Moulvibazar" >Moulvibazar</option>
+                <option value="Munshiganj" >Munshiganj </option>
+                <option value="Mymensingh" >Mymensingh</option>
+                <option value="Naogaon" >Naogaon</option>
+                <option value="Narail" >Narail</option>
+                <option value="Narayanganj" >Narayanganj</option>
+                <option value="Narsingdi" >Narsingdi</option>
+                <option value="Natore" >Natore</option>
+                <option value="Netrokona" >Netrokona</option>
+                <option value="Nilphamari" >Nilphamari</option>
+                <option value="Noakhali" >Noakhali</option>
+                <option value="Pabna" >Pabna</option>
+                <option value="Panchagarh" >Panchagarh</option>
+                <option value="Patuakhali" >Patuakhali</option>
+                <option value="Pirojpur" >Pirojpur</option>
+                <option value="Rajbari" >Rajbari</option>
+                <option value="Rajshahi" >Rajshahi</option>
+                <option value="Rangamati" >Rangamati</option>
+                <option value="Rangpur" >Rangpur</option>
+                <option value="Satkhira" >Satkhira</option>
+                <option value="Shariatpur" >Shariatpur</option>
+                <option value="Sherpur" >Sherpur</option>
+                <option value="Sirajganj" >Sirajganj</option>
+                <option value="Sunamganj" >Sunamganj</option>
+                <option value="Sylhet" >Sylhet</option>
+                <option value="Tangail" >Tangail</option>
+                <option value="Thakurgaon" >Thakurgaon</option>
+            </select>
+        </div>
+
+
+
+
+
+<button type="submit" class="submit-btn">Save</button>
+
+
+
+</form>
+
+<form  method="POST" action="form_3.php "  id="personal" class="input-group">
+<input type="text" class="input-field" placeholder="What kind of clothes do you wear to go outside? " name="cloth">
+<input type="text" class="input-field" placeholder="Do you perform five times salah timely?" name="salah" required>
+<input type="text" class="input-field" placeholder="Do you maintain mahram/Non-mahram" name="mahram_nonmahram" required>
+<input type="text" class="input-field" placeholder="Can you read Quran?"  name="quran" required>
+<input type="text" class="input-field" placeholder="Which madhab do you follow" name="madhab" >
+<input type="text" class="input-field" placeholder="Do you hear or watch any kind of videos which are restricted in Islam?" name="song_video" required>
+<input type="text" class="input-field" placeholder="Do you have any physical or mental disease" name="disease"  >
+<input type="text" class="input-field" placeholder="Write something about yourself" name="yourself" >
+
+ <div class="flex-radio">
+<p> <b>Your Gender</b></p>
+<input type="radio" class="radio-btn"  name="gender" value="male"  checked="checked" > Male
+<input type="radio"  class="radio-btn" name="gender" value="female" > Female
+</div>
+
+	<div  class="input-field dropDown">
+            <label for="searchM/F" class="">Marital Status&nbsp</label>
+            <select name="marital_status" id="searchM/F" ">
+                <option value="unmarried" >Unmarried</option>
+                <option value="married" >Married</option>
+                <option value="divorced" selected>Divorced</option>
+                <option value="widow" >Widow</option>
+                <option value="widower" >Widower</option>
+            </select>
+        </div>
+	
+	
+	<div class="input-field dropDown">
+            <label for="searchM/F" id="m" class="">Your Permanent Address &nbsp</label>
+            <select name="permanent_address" id="searchM/F">
+                <option value="bagerhat" >Bagerhat</option>
+                <option value="Bandarban" >Bandarban</option>
+                <option value="Barguna" >Barguna </option>
+                <option value="Barisal" >Barisal</option>
+                <option value="Bhola" >Bhola</option>
+                <option value="Bogra" >Bogra</option>
+                <option value="Brahmanbaria" >Brahmanbaria</option>
+                <option value="Chandpur" >Chandpur</option>
+                <option value="Chapainawabganj" >Chapainawabganj </option>
+                <option value="Chittagong" >Chittagong</option>
+                <option value="Chuadanga" >Chuadanga </option>
+                <option value="Comilla" >Comilla</option>
+                <option value="Cox's Bazar" >Cox's Bazar </option>
+                <option value="Dhaka" >Dhaka</option>
+                <option value="Dinajpur" >Dinajpur</option>
+                <option value="Faridpur" >Faridpur</option>
+                <option value="Feni" >Feni</option>
+                <option value="Gaibandha" >Gaibandha</option>
+                <option value="Gazipur" >Gazipur</option>
+                <option value="Gopalganj" >Gopalganj</option>
+                <option value="Habiganj" >Habiganj</option>
+                <option value="Jamalpur" >Jamalpur</option>
+                <option value="Jessore" >Jessore</option>
+                <option value="Jhalokati" >Jhalokati</option>
+                <option value="Jhenaidah" >Jhenaidah</option>
+                <option value="Joypurhat" >Joypurhat</option>
+                <option value="Khagrachhari" >Khagrachhari</option>
+                <option value="Khulna" >Khulna</option>
+                <option value="Kishoreganj" >Kishoreganj </option>
+                <option value="Kurigram" >Kurigram</option>
+                <option value="Kushtia" >Kushtia</option>
+                <option value="Lakshmipur" >Lakshmipur </option>
+                <option value="Lalmonirhat" >Lalmonirhat</option>
+                <option value="Madaripur" >Madaripur</option>
+                <option value="Magura" >Magura</option>
+                <option value="Manikganj" >Manikganj </option>
+                <option value="Meherpur" >Meherpur</option>
+                <option value="Moulvibazar" >Moulvibazar</option>
+                <option value="Munshiganj" >Munshiganj </option>
+                <option value="Mymensingh" >Mymensingh</option>
+                <option value="Naogaon" >Naogaon</option>
+                <option value="Narail" >Narail</option>
+                <option value="Narayanganj" >Narayanganj</option>
+                <option value="Narsingdi" >Narsingdi</option>
+                <option value="Natore" >Natore</option>
+                <option value="Netrokona" >Netrokona</option>
+                <option value="Nilphamari" >Nilphamari</option>
+                <option value="Noakhali" >Noakhali</option>
+                <option value="Pabna" >Pabna</option>
+                <option value="Panchagarh" >Panchagarh</option>
+                <option value="Patuakhali" >Patuakhali</option>
+                <option value="Pirojpur" >Pirojpur</option>
+                <option value="Rajbari" >Rajbari</option>
+                <option value="Rajshahi" >Rajshahi</option>
+                <option value="Rangamati" >Rangamati</option>
+                <option value="Rangpur" >Rangpur</option>
+                <option value="Satkhira" >Satkhira</option>
+                <option value="Shariatpur" >Shariatpur</option>
+                <option value="Sherpur" >Sherpur</option>
+                <option value="Sirajganj" >Sirajganj</option>
+                <option value="Sunamganj" >Sunamganj</option>
+                <option value="Sylhet" >Sylhet</option>
+                <option value="Tangail" >Tangail</option>
+                <option value="Thakurgaon" >Thakurgaon</option>
+            </select>
+        </div>
+
+
+
+<button type="submit" class="submit-btn">Save</button>
+
+</form>
+
+<form  method="POST" action="form_4.php "  id="family" class="input-group">
+<input type="name" class="input-field" placeholder="Your Father's Name" name="father_name" required>
+<input type="name" class="input-field" placeholder="Your Mother's Name" name="mother_name"required>
+<input type="text" class="input-field" placeholder="Your Father's Occupation" name="father_occupation"required>
+<input type="text" class="input-field" placeholder="Your Mother's Occupation" name="mother_occupation" required>
+<input type="text" class="input-field" placeholder="Number of brother's you have" name="brother" required>
+<input type="text" class="input-field" placeholder="Number of sister's you have" name="sister" required>
+<input type="text" class="input-field" placeholder="Total Monthly Income of Your Family" name="monthly_income_of_your_family"  >
+<input type="text" class="input-field" placeholder="Economical condition of your family" name="economical_condition" >
+
+ <div class="flex-radio">
+<p> <b>Your Gender</b></p>
+<input type="radio" class="radio-btn"  name="gender" value="male"  checked="checked" > Male
+<input type="radio"  class="radio-btn" name="gender" value="female" > Female
+</div>
+
+	<div  class="input-field dropDown">
+            <label for="searchM/F" class="">Marital Status&nbsp</label>
+            <select name="marital_status" id="searchM/F" ">
+                <option value="unmarried" >Unmarried</option>
+                <option value="married" >Married</option>
+                <option value="divorced" selected>Divorced</option>
+                <option value="widow" >Widow</option>
+                <option value="widower" >Widower</option>
+            </select>
+        </div>
+		
+<div class="input-field dropDown">
+            <label for="searchM/F" id="m" class="">Your Permanent Address &nbsp</label>
+            <select name="permanent_address" id="searchM/F">
+                <option value="bagerhat" >Bagerhat</option>
+                <option value="Bandarban" >Bandarban</option>
+                <option value="Barguna" >Barguna </option>
+                <option value="Barisal" >Barisal</option>
+                <option value="Bhola" >Bhola</option>
+                <option value="Bogra" >Bogra</option>
+                <option value="Brahmanbaria" >Brahmanbaria</option>
+                <option value="Chandpur" >Chandpur</option>
+                <option value="Chapainawabganj" >Chapainawabganj </option>
+                <option value="Chittagong" >Chittagong</option>
+                <option value="Chuadanga" >Chuadanga </option>
+                <option value="Comilla" >Comilla</option>
+                <option value="Cox's Bazar" >Cox's Bazar </option>
+                <option value="Dhaka" >Dhaka</option>
+                <option value="Dinajpur" >Dinajpur</option>
+                <option value="Faridpur" >Faridpur</option>
+                <option value="Feni" >Feni</option>
+                <option value="Gaibandha" >Gaibandha</option>
+                <option value="Gazipur" >Gazipur</option>
+                <option value="Gopalganj" >Gopalganj</option>
+                <option value="Habiganj" >Habiganj</option>
+                <option value="Jamalpur" >Jamalpur</option>
+                <option value="Jessore" >Jessore</option>
+                <option value="Jhalokati" >Jhalokati</option>
+                <option value="Jhenaidah" >Jhenaidah</option>
+                <option value="Joypurhat" >Joypurhat</option>
+                <option value="Khagrachhari" >Khagrachhari</option>
+                <option value="Khulna" >Khulna</option>
+                <option value="Kishoreganj" >Kishoreganj </option>
+                <option value="Kurigram" >Kurigram</option>
+                <option value="Kushtia" >Kushtia</option>
+                <option value="Lakshmipur" >Lakshmipur </option>
+                <option value="Lalmonirhat" >Lalmonirhat</option>
+                <option value="Madaripur" >Madaripur</option>
+                <option value="Magura" >Magura</option>
+                <option value="Manikganj" >Manikganj </option>
+                <option value="Meherpur" >Meherpur</option>
+                <option value="Moulvibazar" >Moulvibazar</option>
+                <option value="Munshiganj" >Munshiganj </option>
+                <option value="Mymensingh" >Mymensingh</option>
+                <option value="Naogaon" >Naogaon</option>
+                <option value="Narail" >Narail</option>
+                <option value="Narayanganj" >Narayanganj</option>
+                <option value="Narsingdi" >Narsingdi</option>
+                <option value="Natore" >Natore</option>
+                <option value="Netrokona" >Netrokona</option>
+                <option value="Nilphamari" >Nilphamari</option>
+                <option value="Noakhali" >Noakhali</option>
+                <option value="Pabna" >Pabna</option>
+                <option value="Panchagarh" >Panchagarh</option>
+                <option value="Patuakhali" >Patuakhali</option>
+                <option value="Pirojpur" >Pirojpur</option>
+                <option value="Rajbari" >Rajbari</option>
+                <option value="Rajshahi" >Rajshahi</option>
+                <option value="Rangamati" >Rangamati</option>
+                <option value="Rangpur" >Rangpur</option>
+                <option value="Satkhira" >Satkhira</option>
+                <option value="Shariatpur" >Shariatpur</option>
+                <option value="Sherpur" >Sherpur</option>
+                <option value="Sirajganj" >Sirajganj</option>
+                <option value="Sunamganj" >Sunamganj</option>
+                <option value="Sylhet" >Sylhet</option>
+                <option value="Tangail" >Tangail</option>
+                <option value="Thakurgaon" >Thakurgaon</option>
+            </select>
+        </div>
+		
+ 		
+	
+<button type="submit" class="submit-btn">Save</button>
+
+</form>
+
+
+<form method="POST" action="form_5.php " id="partner" class="input-group">
+<input type="text" class="input-field" placeholder="Age" name="age_partner">
+<input type="text" class="input-field" placeholder="Complexion" name="color_partner" required>
+<input type="text" class="input-field" placeholder="Minimum Height" name="height_partner" required>
+<input type="text" class="input-field" placeholder="Minimum Educational Qualification" name="edu_partner" required>
+<input type="text" class="input-field" placeholder="Do you want any kind of dowry?" name="gift_dowry" required>
+<input type="text" class="input-field" placeholder="District" name="district_partner" >
+<input type="text" class="input-field" placeholder="Marital Status" name="marital_status_partner" >
+<input type="text" class="input-field" placeholder="Occupation" name="occupation_partner"  >
+<input type="text" class="input-field" placeholder="Economical Condition" name="economical_condition_partner" >
+<textarea type="text" rows="10" cols="15" class="input-field" placeholder="Short description about what kind of partner you want" name="description_partner" ></textarea>
+
+ <div class="flex-radio">
+<p> <b>Your Gender</b></p>
+<input type="radio" class="radio-btn"  name="gender" value="male"  checked="checked" > Male
+<input type="radio"  class="radio-btn" name="gender" value="female" > Female
+</div>
+
+	<div  class="input-field dropDown">
+            <label for="searchM/F" class="">Marital Status&nbsp</label>
+            <select name="marital_status" id="searchM/F" ">
+                <option value="unmarried" >Unmarried</option>
+                <option value="married" >Married</option>
+                <option value="divorced" selected>Divorced</option>
+                <option value="widow" >Widow</option>
+                <option value="widower" >Widower</option>
+            </select>
+        </div>
+	
+<div class="input-field dropDown">
+            <label for="searchM/F" id="m" class="">Your Permanent Address &nbsp</label>
+            <select name="permanent_address" id="searchM/F">
+                <option value="bagerhat" >Bagerhat</option>
+                <option value="Bandarban" >Bandarban</option>
+                <option value="Barguna" >Barguna </option>
+                <option value="Barisal" >Barisal</option>
+                <option value="Bhola" >Bhola</option>
+                <option value="Bogra" >Bogra</option>
+                <option value="Brahmanbaria" >Brahmanbaria</option>
+                <option value="Chandpur" >Chandpur</option>
+                <option value="Chapainawabganj" >Chapainawabganj </option>
+                <option value="Chittagong" >Chittagong</option>
+                <option value="Chuadanga" >Chuadanga </option>
+                <option value="Comilla" >Comilla</option>
+                <option value="Cox's Bazar" >Cox's Bazar </option>
+                <option value="Dhaka" >Dhaka</option>
+                <option value="Dinajpur" >Dinajpur</option>
+                <option value="Faridpur" >Faridpur</option>
+                <option value="Feni" >Feni</option>
+                <option value="Gaibandha" >Gaibandha</option>
+                <option value="Gazipur" >Gazipur</option>
+                <option value="Gopalganj" >Gopalganj</option>
+                <option value="Habiganj" >Habiganj</option>
+                <option value="Jamalpur" >Jamalpur</option>
+                <option value="Jessore" >Jessore</option>
+                <option value="Jhalokati" >Jhalokati</option>
+                <option value="Jhenaidah" >Jhenaidah</option>
+                <option value="Joypurhat" >Joypurhat</option>
+                <option value="Khagrachhari" >Khagrachhari</option>
+                <option value="Khulna" >Khulna</option>
+                <option value="Kishoreganj" >Kishoreganj </option>
+                <option value="Kurigram" >Kurigram</option>
+                <option value="Kushtia" >Kushtia</option>
+                <option value="Lakshmipur" >Lakshmipur </option>
+                <option value="Lalmonirhat" >Lalmonirhat</option>
+                <option value="Madaripur" >Madaripur</option>
+                <option value="Magura" >Magura</option>
+                <option value="Manikganj" >Manikganj </option>
+                <option value="Meherpur" >Meherpur</option>
+                <option value="Moulvibazar" >Moulvibazar</option>
+                <option value="Munshiganj" >Munshiganj </option>
+                <option value="Mymensingh" >Mymensingh</option>
+                <option value="Naogaon" >Naogaon</option>
+                <option value="Narail" >Narail</option>
+                <option value="Narayanganj" >Narayanganj</option>
+                <option value="Narsingdi" >Narsingdi</option>
+                <option value="Natore" >Natore</option>
+                <option value="Netrokona" >Netrokona</option>
+                <option value="Nilphamari" >Nilphamari</option>
+                <option value="Noakhali" >Noakhali</option>
+                <option value="Pabna" >Pabna</option>
+                <option value="Panchagarh" >Panchagarh</option>
+                <option value="Patuakhali" >Patuakhali</option>
+                <option value="Pirojpur" >Pirojpur</option>
+                <option value="Rajbari" >Rajbari</option>
+                <option value="Rajshahi" >Rajshahi</option>
+                <option value="Rangamati" >Rangamati</option>
+                <option value="Rangpur" >Rangpur</option>
+                <option value="Satkhira" >Satkhira</option>
+                <option value="Shariatpur" >Shariatpur</option>
+                <option value="Sherpur" >Sherpur</option>
+                <option value="Sirajganj" >Sirajganj</option>
+                <option value="Sunamganj" >Sunamganj</option>
+                <option value="Sylhet" >Sylhet</option>
+                <option value="Tangail" >Tangail</option>
+                <option value="Thakurgaon" >Thakurgaon</option>
+            </select>
+        </div>
+
+
+
+
+<button type="submit" class="submit-btn">Save</button>
+
+		
+	</form>
+
+<form method="POST" action="form_6.php " id="contact" class="input-group">
+<input type="text" class="input-field" placeholder="Your guardian's phone number" name="guardian_number" required>
+<input type="text" class="input-field" placeholder="Have You Took Your Guardian's permission?" name="guardian" required>
+<input type="text" class="input-field" placeholder="Your number" name="your_number" required>
+<input type="email" class="input-field" placeholder="Your email address" name="email" required>
+
+ <div class="flex-radio">
+<p> <b>Your Gender</b></p>
+<input type="radio" class="radio-btn"  name="gender" value="male"  checked="checked" > Male
+<input type="radio"  class="radio-btn" name="gender" value="female" > Female
+</div>
+
+	<div  class="input-field dropDown">
+            <label for="searchM/F" class="">Marital Status&nbsp</label>
+            <select name="marital_status" id="searchM/F" ">
+                <option value="unmarried" >Unmarried</option>
+                <option value="married" >Married</option>
+                <option value="divorced" selected>Divorced</option>
+                <option value="widow" >Widow</option>
+                <option value="widower" >Widower</option>
+            </select>
+        </div>
+	
+ <div class="input-field dropDown">
+            <label for="searchM/F" id="m" class="">Your Permanent Address &nbsp</label>
+            <select name="permanent_address" id="searchM/F">
+                <option value="bagerhat" >Bagerhat</option>
+                <option value="Bandarban" >Bandarban</option>
+                <option value="Barguna" >Barguna </option>
+                <option value="Barisal" >Barisal</option>
+                <option value="Bhola" >Bhola</option>
+                <option value="Bogra" >Bogra</option>
+                <option value="Brahmanbaria" >Brahmanbaria</option>
+                <option value="Chandpur" >Chandpur</option>
+                <option value="Chapainawabganj" >Chapainawabganj </option>
+                <option value="Chittagong" >Chittagong</option>
+                <option value="Chuadanga" >Chuadanga </option>
+                <option value="Comilla" >Comilla</option>
+                <option value="Cox's Bazar" >Cox's Bazar </option>
+                <option value="Dhaka" >Dhaka</option>
+                <option value="Dinajpur" >Dinajpur</option>
+                <option value="Faridpur" >Faridpur</option>
+                <option value="Feni" >Feni</option>
+                <option value="Gaibandha" >Gaibandha</option>
+                <option value="Gazipur" >Gazipur</option>
+                <option value="Gopalganj" >Gopalganj</option>
+                <option value="Habiganj" >Habiganj</option>
+                <option value="Jamalpur" >Jamalpur</option>
+                <option value="Jessore" >Jessore</option>
+                <option value="Jhalokati" >Jhalokati</option>
+                <option value="Jhenaidah" >Jhenaidah</option>
+                <option value="Joypurhat" >Joypurhat</option>
+                <option value="Khagrachhari" >Khagrachhari</option>
+                <option value="Khulna" >Khulna</option>
+                <option value="Kishoreganj" >Kishoreganj </option>
+                <option value="Kurigram" >Kurigram</option>
+                <option value="Kushtia" >Kushtia</option>
+                <option value="Lakshmipur" >Lakshmipur </option>
+                <option value="Lalmonirhat" >Lalmonirhat</option>
+                <option value="Madaripur" >Madaripur</option>
+                <option value="Magura" >Magura</option>
+                <option value="Manikganj" >Manikganj </option>
+                <option value="Meherpur" >Meherpur</option>
+                <option value="Moulvibazar" >Moulvibazar</option>
+                <option value="Munshiganj" >Munshiganj </option>
+                <option value="Mymensingh" >Mymensingh</option>
+                <option value="Naogaon" >Naogaon</option>
+                <option value="Narail" >Narail</option>
+                <option value="Narayanganj" >Narayanganj</option>
+                <option value="Narsingdi" >Narsingdi</option>
+                <option value="Natore" >Natore</option>
+                <option value="Netrokona" >Netrokona</option>
+                <option value="Nilphamari" >Nilphamari</option>
+                <option value="Noakhali" >Noakhali</option>
+                <option value="Pabna" >Pabna</option>
+                <option value="Panchagarh" >Panchagarh</option>
+                <option value="Patuakhali" >Patuakhali</option>
+                <option value="Pirojpur" >Pirojpur</option>
+                <option value="Rajbari" >Rajbari</option>
+                <option value="Rajshahi" >Rajshahi</option>
+                <option value="Rangamati" >Rangamati</option>
+                <option value="Rangpur" >Rangpur</option>
+                <option value="Satkhira" >Satkhira</option>
+                <option value="Shariatpur" >Shariatpur</option>
+                <option value="Sherpur" >Sherpur</option>
+                <option value="Sirajganj" >Sirajganj</option>
+                <option value="Sunamganj" >Sunamganj</option>
+                <option value="Sylhet" >Sylhet</option>
+                <option value="Tangail" >Tangail</option>
+                <option value="Thakurgaon" >Thakurgaon</option>
+            </select>
+        </div>
+
+
+
+<button type="submit" class="submit-btn">Publish Biodata</button>
+
+</form>		
+    </div>
+</section>	
+	
+	<script>
+var a = document.getElementById("general");
+var b = document.getElementById("education");
+var c = document.getElementById("personal");
+var d = document.getElementById("family");
+var e = document.getElementById("partner");
+var f = document.getElementById("contact");
+var z = document.getElementById("btn");
+
+function general(){
+a.style.left="100px";
+b.style.left="1400px";
+c.style.left="2700px";
+d.style.left="4000px";
+e.style.left="5300px";
+f.style.left="6600px";
+z.style.left="0px";
+
+}
+function education(){
+a.style.left="-1400px";
+b.style.left="100px";
+c.style.left="1400px";
+d.style.left="2700px";
+e.style.left="4000px";
+f.style.left="5300px";
+z.style.left="171px";
+}
+function personal(){
+a.style.left="-2700px";
+b.style.left="-1400px";
+c.style.left="100px";
+d.style.left="1400px";
+e.style.left="2700px";
+f.style.left="4000px";
+z.style.left="352px";
+}
+function family(){
+a.style.left="-4000px";
+b.style.left="-2700px";
+c.style.left="-1400px";
+d.style.left="100px";
+e.style.left="1400px";
+f.style.left="2700px";
+z.style.left="522px";
+}
+function partner(){
+a.style.left="-5300px";
+b.style.left="-4000px";
+c.style.left="-2700px";
+d.style.left="-1400px";
+e.style.left="100px";
+f.style.left="2700px";
+z.style.left="704px";
+}
+function contact(){
+a.style.left="-6600px";
+b.style.left="-5300px";
+c.style.left="-4000px";
+d.style.left="-2700px";
+e.style.left="-1400px";
+f.style.left="100px";
+z.style.left="910px";
+}
+
+</script>
+
+</body>
+</html>
