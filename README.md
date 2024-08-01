@@ -1,11 +1,5 @@
 # G53-Couple-Search
 
-**Group Number:** 53
-
-Team Members:
---------------
-1)Fahmida Akter (2018331122)<br/>
-2)Ahad Mahjabin Jannat (2018331090)
 
 Expected Timeline:
 ------------------
